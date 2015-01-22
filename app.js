@@ -6,13 +6,13 @@ app.get('/', function(req, res) {
 	res.sendfile('./views/index.html');
 });
 
-	.get('/example', function(req, res) {
-		res.sendfile('./views/example.html');
-	});
+app.get('/example', function(req, res) {
+	res.sendfile('./views/example.html');
+});
 
-	.get('/article', function(req, res) {
-		res.sendfile('./views/article.html');
-	});
+app.get('/article', function(req, res) {
+	res.sendfile('./views/article.html');
+});
 
 
 
