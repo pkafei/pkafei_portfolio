@@ -5,7 +5,7 @@ var app = express();
 app.set('port', (process.env.PORT || 3000));
 
 app.use(express.static(__dirname + '/views'));
-app.engine('html', require('ejs').renderFile);
+//app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.get('/', function(req, res) {
