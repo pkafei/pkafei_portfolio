@@ -3,18 +3,21 @@ var express = require('express');
 var app = express();
 
 app.set('port', (process.env.PORT || 3000));
+
 app.use(express.static(__dirname + '/views'));
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
 
 app.get('/', function(req, res) {
 	res.send('./views/index.html');
 });
 
-app.get('/example', function(req, res) {
-	res.send('./views/example.html');
+app.get('/bop', function(req, res) {
+	res.render('bop.html');
 });
 
-app.get('/article', function(req, res) {
-	res.send('./views/article.html');
+app.get('/example', function(req, res) {
+	res.render('example.html');
 });
 
 app.listen(app.get('port'), function() {
