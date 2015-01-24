@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.11.0",
-    "ejs": "2.2.2"
+    "ejs": "2.2.2 "
   },
   "repository": {
     "type": "git",
