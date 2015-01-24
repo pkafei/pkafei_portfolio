@@ -16,8 +16,8 @@ app.get('/bop', function(req, res) {
 	res.render('bop.html');
 });
 
-app.get('/example', function(req, res) {
-	res.render('example.html');
+app.get('/open_source', function(req, res) {
+	res.render('os.html');
 });
 
 app.listen(app.get('port'), function() {
