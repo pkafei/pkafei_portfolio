@@ -8,6 +8,8 @@ app.use(express.static(__dirname + '/views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
+
+//Routing
 app.get('/', function(req, res) {
 	res.send('./views/index.html');
 });
@@ -24,6 +26,11 @@ app.get('/talks', function(req, res) {
 	res.render('talks.html');
 });
 
+app.get('/canvas', function(req, res) {
+	res.render('canvas.html');
+});
+
+// Setting up local port
 app.listen(app.get('port'), function() {
 console.log("Node app is running at localhost:" + app.get('port'));
 });
