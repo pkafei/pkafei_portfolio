@@ -1,0 +1,10 @@
+/*#map { position: relative; 
+	top:10; 
+	bottom:100;
+	width:50%; 
+	height:200%; 
+	border: 20px, color:black;   
+	vertical-align: middle;
+}
+*/
+#map { position:absolute; top:0; bottom:0; width:100%; }
