@@ -14,8 +14,8 @@ app.get('/', function(req, res) {
 	res.send('./views/index.html');
 });
 
-app.get('/bop', function(req, res) {
-	res.render('bop.html');
+app.get('/snapshots', function(req, res) {
+	res.render('snapshots.html');
 });
 
 app.get('/open_source', function(req, res) {
